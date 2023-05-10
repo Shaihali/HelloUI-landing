@@ -1,0 +1,52 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap);
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss (1) ***!
+  \*************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap);
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss (2) ***!
+  \*************************************************************************************************************/
+@import url(https://fonts.cdnfonts.com/css/circular-std?styles=17912,17908,17905);
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss (3) ***!
+  \*************************************************************************************************************/
+.wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.nav .nav__list .nav__item .nav__link, .nav .nav__list .nav__item {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav .nav__list {
+  display: flex;
+}
+.nav .nav__list .nav__item .nav__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header .header__box {
+  display: flex;
+}
+.header .header__box .header__logo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+.header .header__box .header__nav .nav__list {
+  flex-direction: row;
+}
+.header .header__box .header__nav .nav__list .nav__link {
+  color: #050038;
+}

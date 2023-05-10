@@ -1,0 +1,19 @@
+@import '../common/extension.scss';
+
+.nav {
+	.nav__list{
+		display: flex;
+
+		.nav__item {
+			@extend %reset-styles;
+
+			.nav__link {
+				@extend %reset-styles;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+			}
+		}
+	}
+}

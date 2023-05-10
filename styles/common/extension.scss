@@ -1,0 +1,12 @@
+%reset-styles {
+	list-style-type: none;
+	text-decoration: none;
+}
+@mixin flex-direction($property) {
+	flex-direction: $property;
+}
+@mixin color($property) {
+	color: $property;
+}
+
+
