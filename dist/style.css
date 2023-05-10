@@ -13,14 +13,53 @@
 /*!*************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss (3) ***!
   \*************************************************************************************************************/
+.header .header__box .header__buttons .header__signin, .button, .nav .nav__list .nav__item .nav__link, .nav .nav__list .nav__item {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body, .gretting .short-description .short-description__text, .gretting .short-description .short-description__title, .nav .nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.gretting .short-description .short-description__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gretting .short-description .short-description__title {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 900;
+}
+
 .wrapper {
-  max-width: 1320px;
+  max-width: 1335px;
   margin: 0 auto;
 }
 
-.nav .nav__list .nav__item .nav__link, .nav .nav__list .nav__item {
+.header .header__box .header__buttons .header__signin, .button, .nav .nav__list .nav__item .nav__link, .nav .nav__list .nav__item {
   list-style-type: none;
   text-decoration: none;
+}
+
+body, .gretting .short-description .short-description__text, .gretting .short-description .short-description__title, .nav .nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.gretting .short-description .short-description__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gretting .short-description .short-description__title {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 900;
 }
 
 .nav .nav__list {
@@ -33,8 +72,32 @@
   font-size: 16px;
 }
 
+.btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  background-color: #0555FF;
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.header {
+  padding: 31px 0 100px 0;
+}
 .header .header__box {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header .header__box .header__logo {
   font-family: "Roboto";
@@ -43,10 +106,63 @@
   font-size: 36px;
   line-height: 42px;
   color: #000000;
+  padding-left: 15px;
+}
+.header .header__box .header__nav {
+  margin-left: 135px;
 }
 .header .header__box .header__nav .nav__list {
   flex-direction: row;
+  column-gap: 65px;
 }
 .header .header__box .header__nav .nav__list .nav__link {
   color: #050038;
+}
+.header .header__box .header__buttons {
+  column-gap: 37px;
+}
+.header .header__box .header__buttons .header__signin {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #050038;
+}
+.header .header__box .header__buttons .header__try-free-btn {
+  color: #fff;
+  line-height: 22px;
+}
+
+.gretting .short-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 845px;
+  text-align: center;
+  margin: 0 auto;
+  row-gap: 35px;
+}
+.gretting .short-description .short-description__title {
+  font-size: 96px;
+}
+.gretting .short-description .short-description__text {
+  font-size: 20px;
+  line-height: 32px;
+  color: #5B5E6D;
+  max-width: 526px;
+}
+.gretting .short-description .short-description__buttons {
+  column-gap: 20px;
+}
+.gretting .short-description .short-description__try-free-btn {
+  color: #fff;
+}
+.gretting .short-description .short-description__video-btn {
+  width: 250px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(176, 201, 253, 0.3);
+}
+.gretting .visualization .visualization__image {
+  background-image: url(images/main.png);
 }

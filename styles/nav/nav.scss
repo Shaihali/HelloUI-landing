@@ -1,8 +1,11 @@
 @import '../common/extension.scss';
 
+
+
 .nav {
 	.nav__list{
 		display: flex;
+		@extend %null-property;
 
 		.nav__item {
 			@extend %reset-styles;

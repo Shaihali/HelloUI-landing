@@ -2,5 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/circular-std?styles=17912,17908,17905');
 
+@import '../styles/common/extension.scss';
+@import '../styles/common/mixin.scss';
+@import '../styles/common/variables.scss';
+
+
 @import '../styles/wrapper.scss';
+@import '../styles/nav/nav.scss';
+@import '../styles/buttons/button.scss';
+
 @import '../styles/header/header.scss';
+@import '../styles/gretting/gretting.scss';
+
+body {
+	@extend %null-property;
+}

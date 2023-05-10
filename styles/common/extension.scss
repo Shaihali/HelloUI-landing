@@ -2,11 +2,21 @@
 	list-style-type: none;
 	text-decoration: none;
 }
-@mixin flex-direction($property) {
-	flex-direction: $property;
+%null-property {
+	padding: 0;
+	margin: 0;
 }
-@mixin color($property) {
-	color: $property;
+
+%text-font-family {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
 }
+%title-font-family {
+	font-family: 'Circular Std';
+	font-style: normal;
+	font-weight: 900;
+}
+
 
 

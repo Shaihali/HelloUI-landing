@@ -1,0 +1,6 @@
+@mixin flex-direction($property) {
+	flex-direction: $property;
+}
+@mixin color($property) {
+	color: $property;
+}

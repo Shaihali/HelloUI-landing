@@ -1,9 +1,10 @@
-@import './variables.scss';
-@import '../nav/nav.scss';
-
 .header {
+	padding: 31px 0 100px 0;
+
 	.header__box{
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
 		.header__logo {
 			font-family: 'Roboto';
@@ -12,10 +13,14 @@
 			font-size: 36px;
 			line-height: 42px;
 			color: #000000;
+			padding-left: 15px
 		}
-		.header__nav{
-			.nav__list{
+		.header__nav {
+			margin-left: 135px;
+
+			.nav__list {
 				@include flex-direction(row);
+				column-gap: 65px;
 
 				.nav__link {
 					@include color(#050038);
@@ -23,9 +28,22 @@
 			}
 
 		}
-		.header__buttons{
-			.header__signin{}	
-			.header__try-free-btn{}
+		.header__buttons {
+			column-gap: 37px;
+
+			.header__signin {
+				@extend %reset-styles;
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 21px;
+				color: #050038;
+			}	
+			.header__try-free-btn {
+				color: #fff;
+				line-height: 22px;
+			}
 		}
 	}
 }

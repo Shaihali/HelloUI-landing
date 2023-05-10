@@ -8,9 +8,14 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
+		assetModuleFilename: 'images/[name][ext][query]',
 	},
 	module: {
 		rules: [
+			{
+				test: /\.png/,
+				type: 'asset'
+			},
 			{ test: /\.scss$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] },
 		]
 	},
@@ -22,5 +27,10 @@ module.exports = {
 			filename: 'style.css'
 		})
 	],
+	devServer: {
+    static: './dist',
+    port: 8080,
+    open: true,
+  },
 	mode: 'development',
 };
