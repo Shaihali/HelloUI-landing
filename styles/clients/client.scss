@@ -1,0 +1,35 @@
+.clients {
+	.clients-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.clients__title {
+			@extend %null-property;
+			@extend %text-font-family;
+			font-size: 16px;
+			line-height: 19px;
+			color: #5B5E6D;
+		}
+		.clients__slider {
+			margin: 25px 0 60px 0;
+		}
+		.switch {
+			display: flex;
+			flex-direction: row;
+			column-gap: 5px;
+		}
+		.switch__item {
+			cursor: pointer;
+			width: 30px;
+			height: 3px;
+			background: #C4C4C4;
+			border-radius: 1px;
+		}
+		.switch__item_activ {
+			background: #050038;
+		}
+	}
+	
+}

@@ -13,7 +13,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.png/,
+				test: /\.(png|svg|jpg)$/i,
 				type: 'asset'
 			},
 			{ test: /\.scss$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] },

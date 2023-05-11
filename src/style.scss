@@ -10,9 +10,11 @@
 @import '../styles/wrapper.scss';
 @import '../styles/nav/nav.scss';
 @import '../styles/buttons/button.scss';
+@import '../styles/slider/slider.scss';
 
 @import '../styles/header/header.scss';
 @import '../styles/gretting/gretting.scss';
+@import '../styles/clients/client.scss';
 
 body {
 	@extend %null-property;
