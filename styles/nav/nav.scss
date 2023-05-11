@@ -5,13 +5,10 @@
 .nav {
 	.nav__list{
 		display: flex;
-		@extend %null-property;
 
 		.nav__item {
-			@extend %reset-styles;
 
 			.nav__link {
-				@extend %reset-styles;
 				font-family: 'Inter';
 				font-style: normal;
 				font-weight: 400;

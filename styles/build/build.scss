@@ -1,0 +1,37 @@
+.build {
+	.build__box {
+		.build__contant {
+			order: 2;
+			margin-right: 160px;
+		}
+		.build__image-box {
+			order: 1;
+			.build__image {
+				background-image: url('../assets/img/build.png');
+			}
+			
+			.build__image-dots {
+				bottom: -50px;
+				right: -50px;
+			}
+			
+			.build__icon-circle {
+				top: 34px;
+				left: -58px;
+			}
+			
+			.build__empty-block {
+				top: 0;
+				left: -17px;
+			}
+			
+			.build__semicircle {
+				bottom: -88px;
+				left: -34px;
+				transform: rotate(56deg);
+			}
+		}
+	}
+}
+
+

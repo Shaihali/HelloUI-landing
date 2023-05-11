@@ -5,6 +5,7 @@
 @import '../styles/common/extension.scss';
 @import '../styles/common/mixin.scss';
 @import '../styles/common/variables.scss';
+@import '../styles/common/general.scss';
 
 
 @import '../styles/wrapper.scss';
@@ -15,7 +16,20 @@
 @import '../styles/header/header.scss';
 @import '../styles/gretting/gretting.scss';
 @import '../styles/clients/client.scss';
+@import '../styles/about/about.scss';
+@import '../styles/develop/develop.scss';
+@import '../styles/build/build.scss';
 
-body {
+body,
+h1,
+h2,
+h3,
+ul,
+p  {
 	@extend %null-property;
+}
+
+a,
+li {
+	@extend %reset-styles;
 }

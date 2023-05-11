@@ -1,0 +1,33 @@
+.develop {
+	.develop__box {
+		.develop__contant {
+			margin-left: 160px;
+		}
+		.develop__image-box {
+			.develop__image {
+				background-image: url('../assets/img/develop.png');
+				filter: drop-shadow(-20px 20px 60px rgba(121, 164, 255, 0.3));
+			}
+			.develop__image-dots {
+				position: absolute;
+				bottom: -50px;
+				left: -50px;
+				background-image: url('../assets/img/Dots.png');
+			}
+			.develop__icon-circle {
+				top: 34px;
+				right: -58px;
+			}
+			.develop__empty-block {
+				top: 0;
+				right: -17px;
+			}
+			.develop__semicircle {
+				bottom: -88px;
+				right: -34px;
+				transform: rotate(135deg);
+			}
+		}
+	}
+}
+
