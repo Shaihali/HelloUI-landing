@@ -1,0 +1,23 @@
+.reviews {
+	background: #F8F8FA;
+
+	.reviews__box {
+		flex-direction: column;
+		row-gap: 70px;
+
+		.reviews__headlines {
+			.reviews__subtitle {
+				@extend %text-font-family;
+				text-align: center;
+			}
+			.reviews__title {
+			}
+		}
+		.reviews__contant {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			row-gap: 30px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.card-review {
+	max-width: 427px;
+	min-height: 370px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.card-review__headline {
+	display: flex;
+	align-items: center;
+
+	.card-review__photo {
+		width: 45px;
+		height: 45px;
+	}
+	.card-review__photo_id-1 { background-image: url('../assets/img/lisa.png'); }
+	.card-review__photo_id-2 { background-image: url('../assets/img/bri.png');}
+	.card-review__photo_id-3 { background-image: url('../assets/img/arol.png');}
+	.card-review__photo_id-4 { background-image: url('../assets/img/wes.png');}
+	.card-review__photo_id-5 { background-image: url('../assets/img/lisa2.png');}
+	.card-review__photo_id-6 { background-image: url('../assets/img/travel.png');}
+
+	
+	.card-review__profil-area {
+		flex: 1;
+		margin-left: 10px;
+
+		span {
+			display: block;
+		}
+		.card-review__name {
+			font-family: $font-stack-title;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: #050038;
+		}
+		.card-review__nickname {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #596068;
+		}
+		
+		.card-review__name_check-mark::after {
+			content: '';
+			position: relative;
+			display: inline-block;
+			top: 0px;
+			left: 5px;
+			width: 16px;
+			height: 16px;
+			background-image: url('../assets/svg/check-mark.svg');
+			background-repeat: no-repeat;
+			border-radius: 50%;
+		}
+	}
+	
+	.card-review__icon {
+		width: 25px;
+		height: 20px;
+		background-image: url('../assets/svg/twitter.svg');
+	}
+}
+.card-review__contant {
+	.card-review__text {
+		@extend %text-font-family;
+		font-size: $review-text-size;
+		line-height: $review-height-size;
+		color: $review-text-color;
+	}
+	.card-review__text:not(:last-child) {
+		padding-bottom: 30px
+	}
+}
+
+

@@ -1,0 +1,30 @@
+.update {
+	.update__box {
+		padding-bottom: 150px;
+		.update__contant {
+			margin-left: 160px;
+		}
+		.update__image-box {
+			.update__image {
+				background-image: url('../assets/img/update.png');
+			}
+			.update__image-dots {
+				bottom: -50px;
+				left: -50px;
+			}
+			.update__icon-circle {
+				top: 34px;
+				right: -58px;
+			}
+			.update__empty-block {
+				top: 0;
+				right: -17px;
+			}
+			.update__semicircle {
+				bottom: -88px;
+				right: -34px;
+				transform: rotate(135deg);
+			}
+		}
+	}
+}
