@@ -12,6 +12,8 @@
 @import '../styles/nav/nav.scss';
 @import '../styles/buttons/button.scss';
 @import '../styles/slider/slider.scss';
+@import '../styles/form/form.scss';
+@import '../styles/review/card-review/card-review.scss';
 
 @import '../styles/header/header.scss';
 @import '../styles/gretting/gretting.scss';
@@ -21,15 +23,19 @@
 @import '../styles/build/build.scss';
 @import '../styles/update/update.scss';
 @import '../styles/review/review.scss';
-@import '../styles/review/card-review/card-review.scss';
+@import '../styles/footer/footer.scss';
+
 
 
 body,
 h1,
 h2,
 h3,
+h4,
 ul,
-p  {
+p,
+input,
+button  {
 	@extend %null-property;
 }
 

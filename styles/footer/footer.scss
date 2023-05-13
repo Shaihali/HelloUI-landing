@@ -1,0 +1,129 @@
+.footer {
+	background: #130C3A;
+	position: relative;
+
+	.footer__box {
+		flex-direction: column;
+		
+		
+		.footer__item {
+			display: flex;
+			flex-direction: column;
+			row-gap: 30px;
+			text-align: center;
+			max-width: 748px;
+
+			.footer__title {
+				color: #fff;
+			}
+		}
+		
+		.footer__nav {
+			padding-top: 150px;
+			@extend %text-font-family;
+			@extend %footer-link-style;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 120px;
+
+			.footer__contact {
+				.footer__company-name {
+					font-family: 'Inter';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 28px;
+					line-height: 34px;
+					color: #FFFFFF;
+					margin-bottom: 33px;
+				}
+				.footer__contact-info {
+					display: flex;
+					flex-direction: column;
+					row-gap: 10px;
+					.footer__company-adress {
+					}
+					.footer__company-tell {
+					}
+					.footer__company-email {
+					}
+					
+				}
+				.footer__social-icon {
+					margin-top: 27px;
+					height: 16px;
+
+					.facebook-icon {
+					}
+					.int-icon {
+					}
+					.be-icon {
+					}
+				}
+			}
+			.footer__menu {
+				display: flex;	
+				column-gap: 160px;
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					row-gap: 15px;
+				}
+				h4 {
+					margin-bottom: 25px;
+				}
+				.footer__resources {
+					
+					.footer__resources-list {
+					}
+				}
+				.footer__about-company {
+				}
+				.footer__legal {
+				}
+
+				.footer__menu-title {
+					font-family: 'Circular Std';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 25px;
+					color: #FFFFFF;
+
+				}
+			}
+			
+		}
+		.footer__copyright {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 60px;
+			background: #0F0937;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+
+			.footer__copyright-copy-icon {
+				background-image: url('../assets/svg/copy.svg');
+				display: flex;
+				width: 16px;
+				height: 16px;
+				margin-right: 10px;
+			}
+		}
+		
+	}
+	.footer__link {
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+	}
+}
