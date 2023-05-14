@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require ( "copy-webpack-plugin" );
 
 module.exports = {
 	entry: {
@@ -8,13 +9,15 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		assetModuleFilename: 'images/[name][ext][query]',
 	},
 	module: {
 		rules: [
 			{
-				test: /\.(png|svg|jpg)$/i,
-				type: 'asset'
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset',
+        generator: {
+          filename: 'assets/[name][ext]',
+        },
 			},
 			{ test: /\.scss$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] },
 		]
@@ -25,7 +28,12 @@ module.exports = {
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'style.css'
-		})
+		}),
+		// new  CopyPlugin ( { 
+    //   patterns : [ 
+    //     {  from : "assets" ,  to : "assets"  } , оставлю как один из вариантов копирование файлов
+    //   ] , 
+    // } ) 
 	],
 	devServer: {
     static: './dist',

@@ -1,23 +1,28 @@
+const images = require.context('../assets/slider-img/', false, /\.(png|jpe?g|svg)$/);
+
+
 const sliderBoxs = document.querySelectorAll('.slider__box');
 const sliderBtn = document.querySelector('.switch');
 const sliderBlog = document.querySelector('.slider__blog');
 
-const clientArr = ['hubspot.png', 'jll.png', 'juniper.png', 'lacoste.png', 'netflix.png', 'atlassian.png'];
 
 function slider() {
-	
 	sliderBoxs.forEach((sliderBox) => {
-		for (let i = 0; i < 6; i++) {
+		images.keys().forEach((key) => {
+			const image = images(key)
+			
 			const client = document.createElement('div')
 			const icon = document.createElement('img')
 			client.className = 'client'
 	
-			icon.setAttribute('src', `../assets/img/${clientArr[i]}`)
+			icon.src = image
 	
 			client.append(icon)
 			
 			sliderBox.append(client)
-		}
+		})
+			
+		
 		
 	})
 }

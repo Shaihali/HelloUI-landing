@@ -345,7 +345,7 @@ button {
   left: 5px;
   width: 16px;
   height: 16px;
-  background-image: url(images/check-mark.svg);
+  background-image: url(assets/check-mark.svg);
   background-repeat: no-repeat;
   border-radius: 50%;
 }
@@ -496,7 +496,7 @@ button {
   border-radius: 6px;
 }
 .gretting .gretting-box .visualization .visualization__image {
-  background-image: url(images/main.png);
+  background-image: url(assets/main.png);
   height: 757px;
   width: 1135px;
   background-repeat: no-repeat;
@@ -631,7 +631,7 @@ button {
   margin-left: 160px;
 }
 .develop .develop__box .develop__image-box .develop__image {
-  background-image: url(images/develop.png);
+  background-image: url(assets/develop.png);
   filter: drop-shadow(-20px 20px 60px rgba(121, 164, 255, 0.3));
 }
 .develop .develop__box .develop__image-box .develop__image-dots {
@@ -662,7 +662,7 @@ button {
   order: 1;
 }
 .build .build__box .build__image-box .build__image {
-  background-image: url(images/build.png);
+  background-image: url(assets/build.png);
 }
 .build .build__box .build__image-box .build__image-dots {
   bottom: -50px;
@@ -689,7 +689,7 @@ button {
   margin-left: 160px;
 }
 .update .update__box .update__image-box .update__image {
-  background-image: url(images/update.png);
+  background-image: url(assets/update.png);
 }
 .update .update__box .update__image-box .update__image-dots {
   bottom: -50px;
