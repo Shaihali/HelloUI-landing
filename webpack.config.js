@@ -33,4 +33,5 @@ module.exports = {
     open: true,
   },
 	mode: 'development',
+	devtool: 'inline-source-map',
 };
